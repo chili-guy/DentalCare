@@ -19,6 +19,10 @@
   font-family: 'Inter Tight', 'Instrument Sans', sans-serif;
 }
 
+.font-review {
+  font-family: 'Crimson Pro', 'EB Garamond', Georgia, serif;
+}
+
 @keyframes rotate-slow {
   from {
     transform: rotate(0deg);

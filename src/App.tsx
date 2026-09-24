@@ -7,6 +7,10 @@ import React, { useState } from 'react';
 import { Hero, HERO_IMAGE } from './Hero';
 import { ServicesAccordion } from './ServicesAccordion';
 import { Specialists } from './Specialists';
+import { FreeConsultation } from './FreeConsultation';
+import { WhoWeHelp } from './WhoWeHelp';
+import { Reviews } from './Reviews';
+import { Footer } from './Footer';
 import {
   RotateCcw,
   Sparkles,
@@ -365,6 +369,18 @@ export default function App() {
 
       {/* Seção Nossos Especialistas */}
       <Specialists />
+
+      {/* Seção Consultas Gratuitas (Free Doctor Consultations) */}
+      <FreeConsultation />
+
+      {/* Seção A Quem Ajudamos? (Who We Help?) */}
+      <WhoWeHelp />
+
+      {/* Seção de Avaliações (1800+ Reviews) */}
+      <Reviews />
+
+      {/* Seção Final com CTA + Rodapé e Google Maps */}
+      <Footer />
     </main>
   );
 }

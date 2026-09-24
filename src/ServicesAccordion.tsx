@@ -118,6 +118,7 @@ export const ServicesAccordion: React.FC<ServicesAccordionProps> = ({
 
   return (
     <section
+      id="services"
       aria-label="Serviços odontológicos"
       className={`relative w-full bg-[#FBF3E4] text-[#7A3314] font-hero py-20 md:py-28 select-none ${className}`}
     >

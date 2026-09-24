@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
+import { CarouselNavButtons } from './CarouselNavButtons';
 
 export interface Specialist {
   id: string;
@@ -142,6 +143,7 @@ export const Specialists: React.FC<SpecialistsProps> = ({
 
   return (
     <section
+      id="doctors"
       aria-label="Nossos Especialistas"
       className={`w-full bg-[#ADA3F2] text-white font-hero py-[120px] overflow-hidden select-none ${className}`}
     >
@@ -160,61 +162,16 @@ export const Specialists: React.FC<SpecialistsProps> = ({
           </h2>
 
           {/* Botões de navegação: Ocultos no desktop (lg:hidden), visíveis abaixo de 1024px */}
-          <div className="flex lg:hidden items-center gap-2 flex-shrink-0" aria-label="Controles do carrossel">
-            {/* Botão Anterior (←) */}
-            <button
-              type="button"
-              aria-label="Especialista anterior"
-              disabled={!canScrollLeft}
-              onClick={() => scrollByCard('left')}
-              className={`w-[44px] h-[44px] rounded-full border border-white flex items-center justify-center transition-all duration-300 focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 ${
-                !canScrollLeft
-                  ? 'opacity-40 cursor-not-allowed'
-                  : 'bg-transparent text-white cursor-pointer hover:bg-white hover:text-[#ADA3F2] active:scale-95'
-              }`}
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="19" y1="12" x2="5" y2="12" />
-                <polyline points="12 19 5 12 12 5" />
-              </svg>
-            </button>
-
-            {/* Botão Próximo (→) */}
-            <button
-              type="button"
-              aria-label="Próximo especialista"
-              disabled={!canScrollRight}
-              onClick={() => scrollByCard('right')}
-              className={`w-[44px] h-[44px] rounded-full border border-white flex items-center justify-center transition-all duration-300 focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 ${
-                !canScrollRight
-                  ? 'opacity-40 cursor-not-allowed'
-                  : 'bg-transparent text-white cursor-pointer hover:bg-white hover:text-[#ADA3F2] active:scale-95'
-              }`}
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <polyline points="12 5 19 12 12 19" />
-              </svg>
-            </button>
-          </div>
+          <CarouselNavButtons
+            onPrev={() => scrollByCard('left')}
+            onNext={() => scrollByCard('right')}
+            canPrev={canScrollLeft}
+            canNext={canScrollRight}
+            prevLabel="Especialista anterior"
+            nextLabel="Próximo especialista"
+            variant="light"
+            className="lg:hidden"
+          />
         </div>
 
         {/* ============================================================== */}

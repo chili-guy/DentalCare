@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { RotatingBadge } from './RotatingBadge';
 
 // URL placeholder do Unsplash ou asset local de fácil substituição na constante HERO_IMAGE
 export const HERO_IMAGE = '/hero-dental.jpg';
@@ -117,56 +118,25 @@ export const Hero: React.FC<HeroProps> = ({
         {/* Bloco Selo Circular + Parágrafo (canto inferior direito) */}
         <div className="flex flex-col items-start max-w-[260px] animate-fade-up-content opacity-0 will-change-transform">
           
-          {/* Selo circular giratório */}
-          <div
-            className="relative mb-5 md:mb-6 select-none group"
-            title={badgeText.trim()}
-          >
-            <div className="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full bg-[#E6EE4F] flex items-center justify-center relative shadow-[0_8px_24px_rgba(0,0,0,0.25)] transition-transform duration-300 hover:scale-105">
-              
-              {/* Texto em path SVG circular com rotação contínua */}
-              <svg
-                className="absolute inset-0 w-full h-full animate-rotate-slow pointer-events-none"
-                viewBox="0 0 100 100"
-                aria-hidden="true"
-              >
-                <defs>
-                  {/* Path circular centralizado perfeitamente no diâmetro 72 (raio 36) */}
-                  <path
-                    id="heroDentalBadgePath"
-                    d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0"
-                    fill="none"
-                  />
-                </defs>
-                <text
-                  className="fill-[#5A4A1F] text-[9.3px] font-bold tracking-[0.12em] uppercase"
-                  style={{ letterSpacing: '0.12em' }}
-                >
-                  <textPath
-                    href="#heroDentalBadgePath"
-                    startOffset="0%"
-                  >
-                    {badgeText}
-                  </textPath>
-                </text>
-              </svg>
-
-              {/* Ícone minimalista de dente centralizado em traço fino (#5A4A1F) */}
-              <div className="relative z-10 flex items-center justify-center">
-                <svg
-                  className="w-7 h-7 md:w-8 md:h-8 text-[#5A4A1F]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  {/* Contorno anatômico com dois lóbulos na coroa e raízes suaves */}
-                  <path d="M7 3.5C4.8 3.5 3.5 5.2 3.5 7.8C3.5 10.8 5 12.8 6 14.2C7 15.8 7.5 18.6 8.5 20.4C9.2 21.4 10.2 20.9 11 18.5L12 15.5L13 18.5C13.8 20.9 14.8 21.4 15.5 20.4C16.5 18.6 17 15.8 18 14.2C19 12.8 20.5 10.8 20.5 7.8C20.5 5.2 19.2 3.5 17 3.5C15 3.5 13.5 4.8 12 5.8C10.5 4.8 9 3.5 7 3.5Z" />
-                </svg>
-              </div>
+          {/* Selo circular giratório reutilizável */}
+          <div className="mb-5 md:mb-6">
+            <div className="hidden md:block">
+              <RotatingBadge
+                text={badgeText}
+                size={110}
+                badgeBgColor="#E6EE4F"
+                textColor="#5A4A1F"
+                iconColor="#5A4A1F"
+              />
+            </div>
+            <div className="block md:hidden">
+              <RotatingBadge
+                text={badgeText}
+                size={90}
+                badgeBgColor="#E6EE4F"
+                textColor="#5A4A1F"
+                iconColor="#5A4A1F"
+              />
             </div>
           </div>
 
