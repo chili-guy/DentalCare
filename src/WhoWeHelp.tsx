@@ -21,8 +21,8 @@ export const AUDIENCES: AudienceItem[] = [
     clipShapeId: 'shape-kids',
     image: '/audiences/kids.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=85&w=800',
-    alt: 'Criança sorrindo durante atendimento odontológico infantil',
+      'https://images.unsplash.com/photo-1758205307836-0829c799890b?auto=format&fit=crop&q=85&w=800',
+    alt: 'Dentista examinando os dentes de um menino em atendimento infantil',
   },
   {
     id: 'teen',
@@ -33,8 +33,8 @@ export const AUDIENCES: AudienceItem[] = [
     clipShapeId: 'shape-teen',
     image: '/audiences/teen.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=85&w=800',
-    alt: 'Adolescente realizando avaliação odontológica preventiva e ortodontia',
+      'https://images.unsplash.com/photo-1758205308172-fc864545dcf7?auto=format&fit=crop&q=85&w=800',
+    alt: 'Dentista examinando os dentes de uma jovem em avaliação ortodôntica',
   },
   {
     id: 'adult',
@@ -45,8 +45,8 @@ export const AUDIENCES: AudienceItem[] = [
     clipShapeId: 'shape-adult',
     image: '/audiences/adult.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=85&w=800',
-    alt: 'Mulher adulta sorrindo com dentes saudáveis e alinhados em consulta odontológica',
+      'https://images.unsplash.com/photo-1663755489920-5e09f66d011a?auto=format&fit=crop&q=85&w=800',
+    alt: 'Homem adulto sorrindo durante consulta odontológica',
   },
 ];
 

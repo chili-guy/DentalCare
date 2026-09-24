@@ -11,7 +11,7 @@ export const HERO_IMAGE = '/hero-dental.jpg';
 
 // URL alternativa remota no Unsplash 100% verificada e ativa
 export const UNSPLASH_HERO_IMAGE =
-  'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=85&w=2560';
+  'https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&fit=crop&q=85&w=2560';
 
 export interface HeroProps {
   imageSrc?: string;
@@ -38,7 +38,7 @@ export interface HeroProps {
  */
 export const Hero: React.FC<HeroProps> = ({
   imageSrc = HERO_IMAGE,
-  imageAlt = 'Close-up de sorriso feminino com dentes brancos perfeitos, lábios rosados e dedo tocando a bochecha',
+  imageAlt = 'Mulher sorrindo com dentes brancos e saudáveis',
   imagePosition = 'center center',
   className = '',
   showRoundedFrame = true,

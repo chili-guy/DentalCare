@@ -18,7 +18,7 @@ export const SPECIALISTS: Specialist[] = [
     bgColor: '#F2A97A',
     image: '/specialists/dr-john-smith.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=85&w=800',
+      'https://images.unsplash.com/photo-1667133295308-9ef24f71952e?auto=format&fit=crop&q=85&w=800',
   },
   {
     id: 'dr-david-kim',
@@ -45,7 +45,7 @@ export const SPECIALISTS: Specialist[] = [
     bgColor: '#C3D5FA',
     image: '/specialists/dr-steven-lee.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=85&w=800',
+      'https://images.unsplash.com/photo-1674775372058-c4c8813c6611?auto=format&fit=crop&q=85&w=800',
   },
 ];
 

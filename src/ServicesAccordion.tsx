@@ -17,8 +17,8 @@ export const SERVICES: ServiceItem[] = [
       'Inclui consultas regulares, limpezas, restaurações estéticas, tratamentos de canal, extrações e procedimentos cosméticos como clareamento dental e ortodontia.',
     image: '/services/dental-fillings.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&q=85&w=1000',
-    alt: 'Paciente sorrindo durante procedimento de restauração dentária estética em clínica odontológica',
+      'https://images.unsplash.com/photo-1667133295352-ef4c83620e8e?auto=format&fit=crop&q=85&w=1000',
+    alt: 'Dentista realizando restauração dentária em paciente com espelho clínico',
   },
   {
     id: 'teeth-whitening',
@@ -27,8 +27,8 @@ export const SERVICES: ServiceItem[] = [
       'Inclui avaliação personalizada da tonalidade, profilaxia profunda, clareamento dental a laser de consultório e procedimentos para devolver o brilho radiante aos dentes.',
     image: '/services/teeth-whitening.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=85&w=1000',
-    alt: 'Procedimento profissional de clareamento dental com iluminação de precisão e dentista com luvas cirúrgicas',
+      'https://images.unsplash.com/photo-1684607633080-df59e6874367?auto=format&fit=crop&q=85&w=1000',
+    alt: 'Paciente com óculos de proteção durante procedimento de clareamento dental',
   },
   {
     id: 'oral-surgery',
@@ -37,8 +37,8 @@ export const SERVICES: ServiceItem[] = [
       'Inclui cirurgias orais de alta precisão, remoção de sisos inclusos, enxertos ósseos, frenectomias e intervenções guiadas por microscopia cirúrgica avançada com recuperação rápida.',
     image: '/services/oral-surgery.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=85&w=1000',
-    alt: 'Equipe de cirurgiões-dentistas com microscópio cirúrgico avançado realizando procedimento de cirurgia oral',
+      'https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&q=85&w=1000',
+    alt: 'Dois cirurgiões-dentistas com equipamento de proteção realizando cirurgia oral',
   },
   {
     id: 'dental-implants',
@@ -47,8 +47,8 @@ export const SERVICES: ServiceItem[] = [
       'Inclui planejamento digital 3D, instalação de implantes dentários de titânio de alta biocompatibilidade, próteses fixas sobre implante e reabilitação estética e mastigatória duradoura.',
     image: '/services/dental-implants.jpg',
     fallbackImage:
-      'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=85&w=1000',
-    alt: 'Procedimento de reabilitação e instalação de implantes dentários com instrumentais odontológicos modernos',
+      'https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=85&w=1000',
+    alt: 'Modelo odontológico demonstrando implantes dentários com coroas',
   },
 ];
 

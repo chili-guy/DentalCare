@@ -26,38 +26,10 @@ import {
 const ALTERNATIVE_IMAGES = [
   {
     id: 'reference',
-    name: 'Sorriso com Dedo na Bochecha (Referência)',
+    name: 'Sorriso Radiante',
     url: '/hero-dental.jpg',
     position: 'center center',
-    alt: 'Close-up de sorriso feminino com dentes brancos, lábios rosados e dedo na bochecha',
-  },
-  {
-    id: 'perfect-macro',
-    name: 'Macro Dentes Brancos Perfeitos',
-    url: '/smile_perfect.jpg',
-    position: 'center 48%',
-    alt: 'Close-up macro de dentes brancos alinhados e sorriso radiante',
-  },
-  {
-    id: 'teeth-closeup',
-    name: 'Close-up Odontológico Radiante',
-    url: '/smile_teeth_closeup.jpg',
-    position: 'center center',
-    alt: 'Sorriso aberto com dentes saudáveis e limpos',
-  },
-  {
-    id: 'beauty-smile',
-    name: 'Estética Dental & Clareamento',
-    url: '/smile_beauty.jpg',
-    position: 'center 45%',
-    alt: 'Tratamento de estética dental e sorriso harmônico',
-  },
-  {
-    id: 'macro-lips',
-    name: 'Macro Lábios & Arcada Dentária',
-    url: '/smile_closeup_macro.jpg',
-    position: 'center center',
-    alt: 'Close-up de sorriso feminino natural com dentes perfeitos',
+    alt: 'Mulher sorrindo com dentes brancos e saudáveis',
   },
 ];
 

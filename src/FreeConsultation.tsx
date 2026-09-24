@@ -5,7 +5,7 @@ import { RotatingBadge } from './RotatingBadge';
 export const CONSULTATION_IMAGE = '/consultation/patient-checkup.jpg';
 
 export const UNSPLASH_CONSULTATION_IMAGE =
-  'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=85&w=1200';
+  'https://images.unsplash.com/photo-1681939282781-341ac4f61996?auto=format&fit=crop&q=85&w=1200';
 
 export interface FreeConsultationProps {
   titleLine1?: string;
@@ -181,7 +181,7 @@ export const FreeConsultation: React.FC<FreeConsultationProps> = ({
               >
                 <img
                   src={currentImg}
-                  alt="Paciente sorrindo durante consulta odontológica"
+                  alt="Dentista examinando os dentes de uma paciente durante consulta"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                   onError={() => {
