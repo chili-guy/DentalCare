@@ -57,13 +57,19 @@ export const RotatingBadge: React.FC<RotatingBadgeProps> = ({
           <text
             style={{
               fill: textColor,
-              letterSpacing: '0.12em',
+              letterSpacing: '0.04em',
               fontSize: '9.2px',
               fontWeight: 700,
             }}
             className="uppercase"
           >
-            <textPath href={`#${badgePathId}`} startOffset="0%">
+            <textPath
+              href={`#${badgePathId}`}
+              startOffset="0%"
+              // Ajusta o texto ao perímetro do círculo (2π·36) para nunca cortar
+              textLength={226}
+              lengthAdjust="spacingAndGlyphs"
+            >
               {text}
             </textPath>
           </text>

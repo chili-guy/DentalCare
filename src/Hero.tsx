@@ -42,10 +42,10 @@ export const Hero: React.FC<HeroProps> = ({
   imagePosition = 'center center',
   className = '',
   showRoundedFrame = true,
-  titleLine1 = 'Cuidado',
-  titleLine2 = 'Odontológico',
-  badgeText = 'SUA SAÚDE BUCAL É NOSSA PRIORIDADE MÁXIMA. ',
-  descriptionText = 'Hospitais odontológicos são unidades de saúde especializadas na prestação de serviços e cuidados dentários aos pacientes.',
+  titleLine1 = 'Sorriso &',
+  titleLine2 = 'Bem-Estar',
+  badgeText = 'TRATAMENTO HUMANIZADO E TECNOLOGIA DE PONTA. ',
+  descriptionText = 'Clínica odontológica de excelência dedicada a transformar sorrisos com conforto, acolhimento e precisão.',
 }) => {
   const [currentSrc, setCurrentSrc] = React.useState(imageSrc);
 
